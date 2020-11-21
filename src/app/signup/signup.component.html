@@ -1,0 +1,35 @@
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+
+          <form>
+              <fieldset>
+                  <legend class="text-center">Valid information is required to register. </legend>
+
+                  <div class="form-group">
+                      <label for="Name"><span class="req">* </span> Name: <small>This will be your login user
+                              name</small> </label>
+                      <input required type="text" required="required" pattern="[A-Za-z0-9]{1,20}" [(ngModel)]="player.name" name="name" id="name"
+                          class="form-control phone" maxlength="28" placeholder="Enter your players name..." />
+                  </div>
+
+                  <div class="form-group">
+                      <label for="firstname"><span class="req">* </span> Password: </label>
+                      <input class="form-control" type="text" required="required" pattern="[A-Za-z0-9]{1,20}" [(ngModel)]="player.password" name="password" id="txt" required
+                          placeholder="Enter valid password" />
+                      <div id="errFirst"></div>
+                  </div>
+
+                  <div class="form-group">
+                      <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerNow()">
+                  </div>
+              </fieldset>
+          </form>
+      </div>
+  </div>
+</div>
+
+<div style="text-align: center">
+    <h1>{{message}}</h1>
+  </div>

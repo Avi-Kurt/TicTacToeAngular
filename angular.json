@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tick-tack-toe-angular"
+    }
+  },
+  "defaultProject": "tick-tack-toe-angular",
+  "cli": {
+    "analytics": "1e35c23e-100f-425f-9d33-6f2113a46481"
+  }
 }
